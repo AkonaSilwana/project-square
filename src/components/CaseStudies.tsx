@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
+import { baseURL } from "../utils/constants";
 
 interface CaseStudy {
   imageUrl: string;
   description: string;
   title: string;
 }
-const baseURL =
-  "https://zm6zxgq6hyhe3smi5krzsrk2fu0iidhh.lambda-url.us-east-1.on.aws/";
 
-function CaseStudies() {
+const CaseStudies = () => {
   const [caseStudies, setCaseStudies] = useState<CaseStudy[]>([]);
 
   useEffect(() => {
@@ -18,9 +17,8 @@ function CaseStudies() {
       .then((response) => {
         setCaseStudies(response.data as CaseStudy[]);
       })
-
       .catch((err) => {
-        console.error("Error fetching case studies:", err);
+        alert(`Error fetching case studies: ${err}`);
       });
   }, []);
 
@@ -40,6 +38,6 @@ function CaseStudies() {
       </div>
     </div>
   );
-}
+};
 
 export default CaseStudies;
