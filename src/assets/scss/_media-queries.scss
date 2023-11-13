@@ -11,8 +11,7 @@
       }
 
       .header {
-          // position: relative;
-          height: 80px;
+         height: 80px;
 
           .header-logo {
               img {
@@ -154,8 +153,7 @@
 
           .footer-content {
               grid-template-columns: 1fr;
-              // row-gap: 20px;
-
+             
               .container-1 {
                   h2 {
                       font-size: 22px;

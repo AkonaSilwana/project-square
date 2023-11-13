@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/images/logo.svg";
 
-function Header() {
+const Header = () => {
   const [showNav, setShowNav] = useState(false);
 
   const toogleNav = () => {
     setShowNav(!showNav);
-    console.log(showNav);
   };
 
   return (
@@ -26,6 +25,6 @@ function Header() {
       <button className="action-btn">Let's Talk</button>
     </div>
   );
-}
+};
 
 export default Header;

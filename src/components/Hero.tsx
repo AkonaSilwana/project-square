@@ -1,6 +1,6 @@
 import confidence from "../assets/images/confidence.jpeg";
 
-function Hero() {
+const Hero = () => {
   return (
     <div className="hero">
       <img src={confidence} alt="Jose Mourinho" />
@@ -13,6 +13,6 @@ function Hero() {
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

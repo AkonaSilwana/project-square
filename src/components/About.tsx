@@ -3,6 +3,7 @@ import uxIcon from "../assets/images/UX-Icon.svg";
 import icon from "../assets/images/icon.svg";
 import appDev from "../assets/images/App-Dev-Icon.svg";
 
+//TODO: replace array with api response
 const offerings = [
   {
     icon: webIcon,
@@ -29,7 +30,7 @@ const offerings = [
       "We conduct market research to determine the optimal blockchain-based solutions to help you grow your company and achieve your business goals.",
   },
 ];
-function About() {
+const About = () =>{
   return (
     <div className="about">
       <h2 className="sub-title">What we do</h2>

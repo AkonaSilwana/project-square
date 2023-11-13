@@ -31,7 +31,7 @@ const brandImages: string[] = [
   santam,
   bbc,
 ];
-function Brands() {
+const Brands = () => {
   return (
     <div className="brands">
       <p className="sub-title">You'll be in good company</p>

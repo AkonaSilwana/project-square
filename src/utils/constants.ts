@@ -1,0 +1,1 @@
+export const baseURL = "https://zm6zxgq6hyhe3smi5krzsrk2fu0iidhh.lambda-url.us-east-1.on.aws/";
